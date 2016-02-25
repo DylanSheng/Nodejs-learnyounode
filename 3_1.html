@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the array values after the split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "How are you doing today? \n sdadad";
+    var res = str.split(" ");
+var sum = 0
+var a
+for(var i = 0; i < res.length; i++){
+a = res[i]
+    if( a == "\n"){
+        sum++
+    }
+}
+
+    document.getElementById("demo").innerHTML = sum;
+}
+</script>
+
+</body>
+</html>
